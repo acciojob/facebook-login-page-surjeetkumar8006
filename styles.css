@@ -1,1 +1,137 @@
-/*  your css code here. If applicable */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.left-section {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.logo {
+  color: #1877f2;
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 20px;
+  color: #1c1e21;
+  line-height: 28px;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-box {
+  background: #fff;
+  padding: 20px;
+  width: 360px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.login-btn {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  background-color: #166fe5;
+}
+
+.forgot-link {
+  display: block;
+  margin-top: 12px;
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #dadde1;
+}
+
+.create-btn {
+  background-color: #42b72a;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 17px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.create-btn:hover {
+  background-color: #36a420;
+}
+
+.create-page {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #1c1e21;
+}
+
+.create-page a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.create-page a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .left-section {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}

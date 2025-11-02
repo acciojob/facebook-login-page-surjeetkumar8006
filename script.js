@@ -1,1 +1,5 @@
-//your JS code here. If required.
+// Basic placeholder script
+document.querySelector("form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  alert("Login submitted!");
+});
